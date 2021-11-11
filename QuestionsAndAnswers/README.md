@@ -6,3 +6,5 @@ This directory is the Q&A section about PythonParts. Although it would be nice i
 
 There are three main files (README, Open and General), and (hopefully) many other files.
 The __README__ contains the description and some rules (At one point the local index). In the [__Open__](./Open.md) file there are all the currently open questions that need answering. In the end, the [__General__](./General.md)  file contains questions that have short answers.
+
+If the answer to a question somehow adds to the documentation, better add to the documentation and link to the documentation as the answer.
