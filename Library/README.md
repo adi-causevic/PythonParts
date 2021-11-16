@@ -1,3 +1,7 @@
-# PythonParts Documentation
+# PythonParts Library
 
-As the official documentation about different aspects of the Allplan PythonParts is far from perfect, here you can find the unofficial documentation which should fill the gaps.
+Library for simplifying the work with PythonParts
+
+
+# Contetnts
+- [PolyhedronBuilder](./PolyhedronBuilder.py)
