@@ -150,3 +150,8 @@ Throws:
 Returns:
 - `value of the field`
 
+## `set_hint(self, hint: str) -> None`
+Get the value of a value field
+
+Arguments:
+- `hint: string of hint to be set`

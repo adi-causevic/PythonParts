@@ -30,59 +30,7 @@ class Interactor:
     """
     Wrapper class for the python parts interactor functions
 
-    Usage:
-
-    To use the interactor you first have to notify Allplan that your python part is going to 
-    use an interactor by adding an attribute to the script block in the *.pyp file:
-
-    ```
-    <Script>
-        <Name>path/to/InteractorScript.py</Name>
-        <Text>Interactor PythonPart</Text>
-		<Interactor>True</Interactor>
-    </Script>
-    ```
-    
-    Afterwards you have to create the InteractorScript.py file that should contain at least 3 functions:
-
-    ```
-    from .Interactor import Interactor
-
-    # Method for checking the supported versions
-    def check_allplan_version(build_ele, version):
-        # Delete unused arguments
-        del build_ele
-        del version
-    
-        # Support all versions
-        return True
-    
-    # Method for element creation
-    def create_element(build_ele, doc):
-        # Delete unused arguments
-        del build_ele
-        del doc
-
-        # No elements are going to be created
-        return [], []
-        
-    # Method for interactor creation
-    def create_interactor(coord_input, pyp_path, show_pal_close_btn, str_table_service, build_ele_list, build_ele_composite, control_props_list, modify_uuid_list):
-        return MyInteractor(coord_input, pyp_path, str_table_service, build_ele_list, build_ele_composite, control_props_list, modify_uuid_list)
-
-    # Interactor class
-    class MyInteractor(Interactor):
-        def __init__(self, *args, **kwds):
-            # Init interactor
-            super().__init__("MyPythonPart.pyp", *args, **kwds)
-       
-    ```
-
-    Your interactor class has to inherit from the this interactor, and first call this interactors init method.
-    Forward all arguments and keywords to the Interactor initializer as well as the name of the python part, 
-    this name is the exact name of the *.pyp file. If you want you can skip the .pyp extension and just use the file name.
-
-    The initializer of the Interactor will take care of everything from pallete service creation to event function binding.
+    The documentation is available as a .md file on git
     """
 
 
