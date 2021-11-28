@@ -29,7 +29,6 @@ class InteractorError(Exception):
 class Interactor:
     """
     Wrapper class for the python parts interactor functions
-
     The documentation is available as a .md file on git
     """
 
@@ -81,7 +80,7 @@ class Interactor:
         # Functions called when a value is modified
         self.modify_functions: Dict[int, Callable] = {}
 
-        # Add checking of pallette files and #include files
+        # ToDo: Add checking of pallette files and #include files
         for child in root.iter("Parameter"):
             type_find = child.find("ValueType")
             if 'Button' in type_find.text:
