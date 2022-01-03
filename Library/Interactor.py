@@ -83,7 +83,7 @@ class Interactor:
         # ToDo: Add checking of pallette files and #include files
         for child in root.iter("Parameter"):
             type_find = child.find("ValueType")
-            if 'Button' in type_find.text:
+            if type_find.text in ["Button", "PictureButton", "PictureResourceButton"]:
                 # Events occur when a button is pressed
                 # Get event id and name, and check if the event id has been already used
                 event_id = int(child.find("EventId").text)
