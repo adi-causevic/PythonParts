@@ -36,3 +36,43 @@ Seperate values in script depending on the selected language
 When to use interactor
 
 ## Library
+
+Model3D
+- Transformations
+- Brep/Polyhedron and conversion
+- Simple shapes
+- Rotational bodies
+- Prisms
+- Boolean operations
+  - Faster with breps
+  - add/subrtact...
+
+Model2D
+- Lines
+- Texts
+- Arrows...
+- Images
+
+Properties
+- CommonProperties
+- TextProperties
+- GroupElementProperties
+
+Scale and so on:
+- Add scale DrawingFileService
+- Describe here, and abouts how it works
+
+ModelGroup
+- ElemetGroup
+
+Working with Layouts
+- LayoutFileService
+- Add to Layout, pens/layers/strokes...
+
+Isonometries
+- How to create cuts, views and isonometries
+
+Transformations:
+- Matrixes
+- Functions
+- 2D, 3D
