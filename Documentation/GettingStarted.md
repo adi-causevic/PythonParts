@@ -1,6 +1,7 @@
 # Getting started
 
 ## Create your PythonPart
+*Examples: __DO NOT LOOK AT HelloWorld.pyp, IT IS OUTDATED__*
 
 The functionality of a PythonPart is split in at least 2 different files. The first file is the `<python_part>.pyp` file that describes the Allplan palette part of the PythonPart (basically the UI for interacting with the code). The second file is the `<python_part>.py` file that contains all the logic of the python part. 
 

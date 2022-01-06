@@ -1,11 +1,11 @@
 # DrawingFileService
+*Example: __InteractorExamples/DrawingFileDataInteractor.pyp__*
 
 The `DrawingFileService` class is a service class for all the functions that you might want to do with any drawing file, you can find the official documentation on this class [here](https://pythonparts.allplan.com/2021-1/2021-1/NemAll_Python_BaseElements.html#DrawingFileService), where it is quite well documented. Several use cases of this class are covered in the examples provided by Allplan (most of them are in the interactor examples DrawingFileDataInteractor, ExportImportInteractor, ...).
 
 If you plan on loading on unloading any drawing files, make sure that in the end you leave at least one drawing file active or even better restore the state that was present before any modifications to the drawing file states. It is a bit tideous to do it by hand, hence I made a small context manager class [DrawingFileContext](../Library/DrawingFileContext.py). You can find the [documentation](../Library/DrawingFileContext.md) in the same folder.
 
 Some of the functions are called on an instance, while some other are called on the class. In the documentation you can see if a function is called on the class or instance by checking the type of the first argument. If the type of the first argument is DrawingFileService, the function in called on an instance of the class, and vice versa.
-
 
 ## Loading and unloading drawing files
 

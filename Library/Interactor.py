@@ -172,7 +172,7 @@ class Interactor:
 
     def on_control_event(self, event_id):
         """
-        On control event
+        Called when a button is clicked
 
         Args:
             event_id: event id of control.

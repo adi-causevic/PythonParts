@@ -1,4 +1,5 @@
 # Buttons and control events
+*Example: __PaletteExamples/Buttons.pyp__*
 
 In this document only buttons that start events will be discussed, if you are looking for buttons that act as inputs (`PictureButtonList`, `PictureResourceButtonList`, `RadioButtonGroup` and `RadioButton`) take a look at the [PypFile](./PypFile.md) documentation.
 
