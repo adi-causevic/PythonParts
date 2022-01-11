@@ -72,6 +72,7 @@ The 3 main transformations of 3D objects are done using the [Matrix3D](https://p
 There are 2 ways of representing 3D object in Allplan, the first one is using plain polyhedrons, while the second one is using boundary representations aka. _Brep's_. When deciding what version of a 3D object to use, it best to use to body that suits the task better, and more often than not, it is going to be breps that are the better choice as they are a superset of polygons. 
 
 ### Conversion
+*Example: __GeometryExamples/CreateBrep3DService.pyp__*
 
 While converting from a polyhedron to a brep, almost no information is lost. on the other hand, when converting a brep (eg. a boundary representation of a circle or a rotational body) the smooth body has to be converted into flat faces, hence information is going to be lost. The conversions are possible using the functions
 [CreateBRep3D](https://pythonparts.allplan.com/2021-1/2021-1/NemAll_Python_Geometry.html#-CreateBRep3D) and [CreatePolyhedron](https://pythonparts.allplan.com/2021-1/2021-1/NemAll_Python_Geometry.html#-CreatePolyhedron):
@@ -93,6 +94,7 @@ In the [approximation settings](https://pythonparts.allplan.com/2021-1/2021-1/Ne
 Although it might seem silly to convert between types, creating some types of 3D shapes is only possible using one or the other. Furthermore, boolean operations are only possible if both the objects are of the same type.
 
 ### Boolean operations
+*Example: __GeometryExamples/BoolOp.pyp__*
 
 One of the most important parts of 3D modelling is performing boolean operations on objects. Within the [AllplanGeo](https://pythonparts.allplan.com/2021-1/2021-1/NemAll_Python_Geometry.html) package Allplan gives us a variety of functions for doing just that:
 
